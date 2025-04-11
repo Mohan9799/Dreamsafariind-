@@ -4,130 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DreamSafariInd - Royal Rajasthan Tours</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff8f0;
+      font-family: 'Georgia', serif;
+      background: #fff8f0;
+      color: #4b2e2e;
     }
     header {
-      background-color: #8b0000;
-      color: goldenrod;
-      padding: 20px;
+      background: linear-gradient(to right, #8b0000, #c19a6b);
+      color: white;
+      padding: 1rem 2rem;
       text-align: center;
-      font-family: 'Cinzel Decorative', cursive;
-      font-size: 2rem;
     }
     nav {
-      background-color: #600000;
-      padding: 10px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
     }
     nav a {
-      color: goldenrod;
+      color: white;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
     }
     .hero {
-      background-image: url('https://i.imgur.com/6z4J1Vm.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 100px 20px;
+      background: url('https://i.imgur.com/oYiTqum.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
     }
     .hero h1 {
+      z-index: 1;
       font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px #000;
     }
-    .hero button {
-      padding: 15px 30px;
-      font-size: 1.1rem;
-      background-color: goldenrod;
-      border: none;
-      cursor: pointer;
-    }
-    .section {
-      padding: 60px 20px;
+    .camel-animation {
+      margin: 2rem auto;
       text-align: center;
     }
-    .tours, .antiques {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
+    .camel-animation img {
+      width: 200px;
+      animation: moveCamel 10s linear infinite;
+    }
+    @keyframes moveCamel {
+      0% { transform: translateX(-300px); }
+      100% { transform: translateX(100vw); }
+    }
+    .tours {
+      padding: 2rem;
+      text-align: center;
+    }
+    .tours h2 {
+      color: #8b0000;
+    }
+    .tour-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
     .card {
-      background-color: #fff;
-      border: 2px solid goldenrod;
-      padding: 20px;
-      width: 250px;
+      background: #fff;
+      border: 1px solid #d9c7a4;
+      padding: 1rem;
       border-radius: 12px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #8b0000;
+      background: #8b0000;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <header>DreamSafariInd</header>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#tours">Tours</a>
-    <a href="#antiques">Antiques</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <header>
+    <h1>DreamSafariInd</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tours</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <section class="hero" id="home">
-    <h1>Welcome to the Royal Land of Rajasthan</h1>
-    <p>Explore group tours with a majestic touch of tradition.</p>
-    <button onclick="window.location.href='#tours'">Explore Group Tours</button>
-  </section>
+  <div class="hero">
+    <h1>Experience Royal Rajasthan with Group Tours</h1>
+  </div>
 
-  <section class="section" id="tours">
-    <h2>Popular Group Tours</h2>
-    <div class="tours">
+  <div class="camel-animation">
+    <img src="https://i.gifer.com/7efs.gif" alt="Camel Walking Animation">
+  </div>
+
+  <section class="tours">
+    <h2>Popular Group Tour Plans</h2>
+    <div class="tour-cards">
       <div class="card">
-        <h3>Jodhpur Desert Safari</h3>
-        <p>Ride camels and explore Thar’s golden dunes.</p>
-        <button>View Details</button>
+        <h3>Jaipur - Jodhpur - Udaipur</h3>
+        <p>5 Nights / 6 Days</p>
+        <p>Starting at ₹12,999 per person</p>
       </div>
       <div class="card">
-        <h3>Jaipur Royal Forts</h3>
-        <p>Walk through history with guided tours of palaces.</p>
-        <button>View Details</button>
+        <h3>Desert Safari in Jaisalmer</h3>
+        <p>3 Nights / 4 Days</p>
+        <p>Starting at ₹9,499 per person</p>
       </div>
       <div class="card">
-        <h3>Udaipur Lakeside Retreat</h3>
-        <p>Group stay near the royal lakes and city palace.</p>
-        <button>View Details</button>
+        <h3>Royal Heritage Tour</h3>
+        <p>7 Nights / 8 Days</p>
+        <p>Starting at ₹16,999 per person</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="antiques">
-    <h2>Royal Antiques (Coming Soon)</h2>
-    <div class="antiques">
-      <div class="card">
-        <h3>Miniature Painting</h3>
-        <p>Hand-painted traditional art on silk canvas.</p>
-      </div>
-      <div class="card">
-        <h3>Kathputli Puppets</h3>
-        <p>Colorful handcrafted Rajasthani puppets.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <p>Contact us: mohanrathore21881@gmail.com | WhatsApp: 8114417710</p>
+  <footer>
+    &copy; 2025 DreamSafariInd. All rights reserved.
   </footer>
 </body>
 </html>
