@@ -2,146 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DreamSafariInd - Royal Rajasthan Tours</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: 'Playfair Display', serif;
-      background: linear-gradient(to bottom, #f9f4e7, #e5d2b9);
-      color: #4b2e2e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
     }
-
     header {
-      background-color: #8c5e3c;
-      color: white;
-      padding: 1rem;
+      background-color: #8b0000;
+      color: goldenrod;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 2rem;
+    }
+    nav {
+      background-color: #600000;
+      padding: 10px;
       text-align: center;
     }
-
-    header h1 {
-      font-family: 'Cinzel', serif;
-      margin: 0;
-    }
-
-    nav {
-      background-color: #a67c52;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.5rem;
-    }
-
     nav a {
-      color: white;
+      color: goldenrod;
       text-decoration: none;
-      margin: 0.5rem 1rem;
+      margin: 0 15px;
       font-weight: bold;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: url('https://images.unsplash.com/photo-1560347876-aeef00ee58a1') no-repeat center center/cover;
+      background-image: url('https://i.imgur.com/6z4J1Vm.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
-      text-shadow: 1px 1px 4px #000;
+      padding: 100px 20px;
+      text-align: center;
     }
-
     .hero h1 {
       font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
     }
-
-    .hero p {
-      font-size: 1.2rem;
-    }
-
-    .tours {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 1rem;
-    }
-
-    .card-content h3 {
-      margin-top: 0;
-    }
-
-    .card-content p {
-      font-size: 0.95rem;
-    }
-
-    .form-section {
-      padding: 2rem;
-      background-color: #f5e6d3;
-    }
-
-    .form-section h2 {
-      text-align: center;
-    }
-
-    form {
-      max-width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    form input, form select, form textarea {
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: 'Playfair Display', serif;
-    }
-
-    form button {
-      background-color: #8c5e3c;
-      color: white;
-      padding: 0.75rem;
+    .hero button {
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      background-color: goldenrod;
       border: none;
-      border-radius: 8px;
-      font-weight: bold;
       cursor: pointer;
     }
-
-    form button:hover {
-      background-color: #704326;
+    .section {
+      padding: 60px 20px;
+      text-align: center;
     }
-
+    .tours, .antiques {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: #fff;
+      border: 2px solid goldenrod;
+      padding: 20px;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
     footer {
-      background-color: #8c5e3c;
+      background-color: #8b0000;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 20px;
     }
+  </style>
+</head>
+<body>
+  <header>DreamSafariInd</header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tours">Tours</a>
+    <a href="#antiques">Antiques</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to the Royal Land of Rajasthan</h1>
+    <p>Explore group tours with a majestic touch of tradition.</p>
+    <button onclick="window.location.href='#tours'">Explore Group Tours</button>
+  </section>
+
+  <section class="section" id="tours">
+    <h2>Popular Group Tours</h2>
+    <div class="tours">
+      <div class="card">
+        <h3>Jodhpur Desert Safari</h3>
+        <p>Ride camels and explore Thar’s golden dunes.</p>
+        <button>View Details</button>
+      </div>
+      <div class="card">
+        <h3>Jaipur Royal Forts</h3>
+        <p>Walk through history with guided tours of palaces.</p>
+        <button>View Details</button>
+      </div>
+      <div class="card">
+        <h3>Udaipur Lakeside Retreat</h3>
+        <p>Group stay near the royal lakes and city palace.</p>
+        <button>View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="antiques">
+    <h2>Royal Antiques (Coming Soon)</h2>
+    <div class="antiques">
+      <div class="card">
+        <h3>Miniature Painting</h3>
+        <p>Hand-painted traditional art on silk canvas.</p>
+      </div>
+      <div class="card">
+        <h3>Kathputli Puppets</h3>
+        <p>Colorful handcrafted Rajasthani puppets.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us: mohanrathore21881@gmail.com | WhatsApp: 8114417710</p>
+  </footer>
+</body>
+</html>
