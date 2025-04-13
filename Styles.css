@@ -1,0 +1,36 @@
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('path-to-your-image.jpg'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: #f39c12; /* Golden Color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d35400; /* Darker shade on hover */
+}
