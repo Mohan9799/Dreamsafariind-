@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - DreamSafariInd</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Royal Experience</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="routes.html">Bus Routes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="booking">
+    <h2>Booking Form</h2>
+    <form action="mailto:mohanrathore21881@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="tour">Select Tour:</label>
+      <select id="tour" name="tour" required>
+        <option value="">--Select a Tour--</option>
+        <option value="Jodhpur Heritage Tour">Jodhpur Heritage Tour</option>
+        <option value="Desert Safari - Jaisalmer">Desert Safari - Jaisalmer</option>
+        <option value="Jaipur Royal Palace Tour">Jaipur Royal Palace Tour</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="people">Number of People:</label>
+      <input type="number" id="people" name="people" min="1" placeholder="Enter number of people" required>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DreamSafariInd</p>
+  </footer>
+</body>
+</html>
