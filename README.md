@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamSafariInd</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f0e1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #d69f5d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 3em;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 1.2em;
+    }
+
+    .tour-section {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #f8e4b2;
+    }
+
+    .tour-card {
+      width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .camel-animation {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      animation: camelWalk 5s infinite linear;
+    }
+
+    @keyframes camelWalk {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100%); }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>DreamSafariInd: Royal Rajasthan Tours</h1>
+  </div>
+
+  <div class="intro">
+    <p>Experience the royal life of Rajasthan! Explore ancient forts, palaces, and take a camel ride in the desert.</p>
+  </div>
+
+  <div class="tour-section">
+    <div class="tour-card">
+      <img src="tour1.jpg" alt="Tour 1">
+      <h3>Ajmer & Jaipur Tour</h3>
+      <p>Explore the heritage of Jaipur and Ajmer on this 5-day royal tour.</p>
+    </div>
+    <div class="tour-card">
+      <img src="tour2.jpg" alt="Tour 2">
+      <h3>Jodhpur & Jaisalmer Adventure</h3>
+      <p>Take a thrilling adventure to the desert city of Jaisalmer and the blue city Jodhpur.</p>
+    </div>
+  </div>
+
+  <div class="intro">
+    <h2>Book Your Camel Ride Now!</h2>
+    <div class="camel-animation">
+      <img src="camel.png" alt="Camel">
+    </div>
+  </div>
+</body>
+</html>
